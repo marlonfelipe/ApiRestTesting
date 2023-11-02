@@ -1,0 +1,53 @@
+Automatización de Llamadas a la API con RestAssured, Serenity BDD, y Cucumber
+
+Este proyecto de automatización tiene como objetivo realizar llamadas a la API del sitio web ReqRes.in utilizando las siguientes tecnologías:
+
+    Java 15
+    RestAssured
+    Serenity BDD
+    Patrón Screenplay con Cucumber
+    Postman
+
+Configuración del Proyecto
+
+El proyecto utiliza Java 15 y dependencias de Maven. Asegúrate de configurar tu entorno de desarrollo para utilizar estas versiones. El archivo build.gradle contiene la configuración del proyecto. A continuación, se muestra un fragmento de ese archivo:
+
+gradle
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.3.12")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+group 'org.practice'
+version '1.0'
+
+ext {
+    serenityVersion = '2.3.12'
+}
+
+tasks.withType(JavaCompile) {
+    sourceCompatibility = '15'
+    targetCompatibility = '15'
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
+    // Otras dependencias
+}
+
+Asegúrate de que todas las dependencias mencionadas en el archivo build.gradle estén configuradas correctamente.
