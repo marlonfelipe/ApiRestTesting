@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Information get individual user" skipped="0" tests="1" time="1.12" timestamp="2023-11-01 11:57:10"><testcase name="Send information get individual user with response success"><error type="java.lang.ExceptionInInitializerError"/><system-err>null&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Information get individual user" skipped="0" tests="1" time="1.44" timestamp="2023-11-03 10:53:38"><testcase name="Send information get individual user with response success"><error type="java.lang.ExceptionInInitializerError"/><system-err>null&#13;
 net.serenitybdd.rest.utils.RestDecorationHelper.decorate(RestDecorationHelper.java:20)&#13;
 net.serenitybdd.rest.SerenityRest.fetchRequestSpecification(SerenityRest.java:233)&#13;
 net.serenitybdd.rest.SerenityRest.given(SerenityRest.java:220)&#13;
